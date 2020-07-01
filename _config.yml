@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Homepage
+title: Home
 description: Vedant Sanil's portfolio website.
 keywords: Vedant,Vedant Sanil,Machine Learning,Distributed Systems,CMU,vedantsanil
 baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
