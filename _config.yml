@@ -5,7 +5,7 @@ title: Home
 description: Vedant Sanil's portfolio webpage.
 keywords: Vedant #Vedant,Vedant Sanil,blog,Machine Learning,CMU,Signal Processing, Distributed Systems
 baseurl: / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: https://vedant-sanil.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
+url: https://vedant-sanil.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
@@ -14,7 +14,7 @@ author: Vedant Sanil # change following line to your infomation.
   name: VedantSanil  # Be used at blog posts' author.
   first_name: Vedant  # Be used at index page about me section.
   last_name: Sanil  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: "/static/assets/img/landing/avatar.jpg"  # upload your avatar at directory and edit it.
   github_username: vedant-sanil  # Leave blank if you don't have now
   linkedin_id: vedant-sanil # Leave blank if you don't have now
   facebook_username: vedant.sanil  # Leave blank if you don't have now
