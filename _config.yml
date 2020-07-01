@@ -10,8 +10,8 @@ url: https://vedant-sanil.github.io/  # url should be 'http://<github_username>.
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
-author: Vedant Sanil# change following line to your infomation.
-  name: Vedant Sanil  # Be used at blog posts' author.
+author: Vedant Sanil # change following line to your infomation.
+  name: VedantSanil  # Be used at blog posts' author.
   first_name: Vedant  # Be used at index page about me section.
   last_name: Sanil  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
@@ -31,13 +31,13 @@ author: Vedant Sanil# change following line to your infomation.
   desc: Introduce myself will be here.  # Describe yourself.
 
 # comment
-disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: jalpc
+#disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+#  name: jalpc
 
 # analytics
 ## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  id: UA-171426457-1
+#ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+#  id: UA-171426457-1
 
 ## google optimize
 go:
