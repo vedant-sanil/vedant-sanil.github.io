@@ -4,13 +4,13 @@
     detail: Carnegie Mellon University
     i18n: company_c
   desc:
-    detail: TAed for Introduction to Deep Learning (11785) at CMU for Spring 2020.
+    detail: TA for Introduction to Deep Learning (11785) at CMU for Spring 2020.
     i18n: company_c_desc
   date:
     detail: Jan 2020
     i18n: company_c_date
   job:
-    detail: Graduate Research Assistant
+    detail: Graduate Teaching Assistant
     i18n: company_c_job
   icon: fa-plus-square
 
