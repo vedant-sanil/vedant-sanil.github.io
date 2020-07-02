@@ -29,15 +29,14 @@ author:  # change following line to your infomation.
     - name: fa-linux
     - name: icon-apache
   desc: I am a Graduate Research Assistant at Carnegie Mellon University's Electronics and Computer Engineering (ECE) department. 
-    My projects in ECE draw upon the field of Machine Learning and Signal Processing (MLSP). My work specifically
-    focuses on the applications of MLSP technologies in speech, audio processing and multimodal machine learning. This transalted to
+    My work specifically focuses on the applications of MLSP technologies in speech, audio processing and multimodal machine learning. This transalted to
     my research work with backgroud audio detection, AudioVisual Source Separation and designing ML models to solve
     a variety of problems pertaining to the speech modality. I also take interest in building scalable software systems and their 
     deployment in distributed systems.  # Describe yourself.
 
 # comment
-disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: jalpc
+#disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+  #name: jalpc
 
 # analytics
 ## google analytics
@@ -56,7 +55,7 @@ gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your 
 donation: off  # type 'on'/'off' to choice display donation button at post page or not
 
 ## carousels
-index_carousel: off  # index page carousel switch
+index_carousel: on  # index page carousel switch
 blog_carousel: on  # blog page carousel switch
 
 # scss
