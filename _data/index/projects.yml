@@ -1,22 +1,23 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
+- name: Distributed File System
   i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
+  gh_user: vedant-sanil
+  repo: Restful-DFS
   img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+  desc: Built a Distributed File System in Java to store, retrieve and manage files across multiple storage servers. Included critical functionality included Directory tree Integrity, Storage Server registration, File Replication, Concurrent accesses/updates.
 
-- name: Python
+- name: Distributed Voting System using Blockchain
   i18n: cpython
-  gh_user: python
-  repo: cpython
+  gh_user: vedant-sanil
+  repo: trustable-voting-system
   img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+  desc: Created a custom blockchain based voting system using proof-of-work protocol to mine blocks and proof-of-authority protocol to cast votes.
 
-- name: Google
+- name: Speech-To-Text
   i18n: google
-  url: https://google.com
+  gh_user: vedant-sanil
+  repo: las-speech2text
   img: /static/assets/img/landing/google.png
-  desc: This is another project.
+  desc: Implementation of the Listen-Attend-Spell Architecture for end-to-end speech-to-text conversion system.
