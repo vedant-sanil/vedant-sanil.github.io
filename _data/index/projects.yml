@@ -5,19 +5,19 @@
   i18n: jalpc
   gh_user: vedant-sanil
   repo: Restful-DFS
-  img: /static/assets/img/landing/jekyll.png
+  img: /static/assets/img/landing/filesystem.png
   desc: Built a Distributed File System in Java to store, retrieve and manage files across multiple storage servers. Included critical functionality included Directory tree Integrity, Storage Server registration, File Replication, Concurrent accesses/updates.
 
 - name: Distributed Voting System using Blockchain
   i18n: cpython
   gh_user: vedant-sanil
   repo: trustable-voting-system
-  img: /static/assets/img/landing/python.png
+  img: /static/assets/img/landing/blockchain.png
   desc: Created a custom blockchain based voting system using proof-of-work protocol to mine blocks and proof-of-authority protocol to cast votes.
 
 - name: Speech-To-Text
   i18n: google
   gh_user: vedant-sanil
   repo: las-speech2text
-  img: /static/assets/img/landing/google.png
+  img: /static/assets/img/landing/speechmic.png
   desc: Implementation of the Listen-Attend-Spell Architecture for end-to-end speech-to-text conversion system.
