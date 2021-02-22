@@ -21,8 +21,11 @@ Considering all the factors laid above, this problem becomes an interesting opti
 - It can be assumed that tickets are purchased independently from each other, and similarly the chance of a passenger showing up/not showing up is independent from another passenger.
 - Should a passenger not show up of their own volition, we shall assume the \$200 ticket price shall not be refunded to them.
 
-Starting of with modelling a basic structure for passengers that board the flight given the airline offering a certain number of tickets N, we can use the binomial distribution. Binomial Distribution is useful to model events which model an even similar to a coin toss, i.e. an event with a probability *p* of occuring, and a probability *1-p* of not occuring. In this case, that *p* is represented by a passenger showing up to board the flight. Data shows that percentage being around 95%, hence we set our *p* as 0.95.
+Starting of with modelling a basic structure for passengers that board the flight given the airline offering a certain number of tickets N, we can use the binomial distribution. Binomial Distribution is useful to model events which model an even similar to a coin toss, i.e. an event with a probability ***p*** of occuring, and a probability ***1-p*** of not occuring. In this case, that ***p*** is represented by a passenger showing up to board the flight. Data shows that percentage being around 95%, hence we set our ***p*** as 0.95.
 
 Binomial distributions are represented as,
 
-$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+$$ P(N=n) =  {180 + overbook\choose n}p^n(1-p)^(180+overbook-n)$$
+
+***180 + overbook*** represents the total number of tickets offered by the airline company, defined as the original 180 seats and a variable *overbook* to account for the number of extra seats offered by the airline. ***N*** represents the number of customers who show up at the ticketing counter. Here, binomial theorem allows us to optimize for the number of overbooked seats. Given the probabilistic aspect of running this experiment once, we convert our experiment into a Monte Carlo experimental setting to allow for more deterministic results.
+
