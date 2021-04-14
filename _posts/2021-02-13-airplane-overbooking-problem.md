@@ -81,7 +81,7 @@ It may be observed that, despite not reaching the theoretical limit, this algori
 
 It may be interesting to note that in more realistic settings, the demand for tickets is not always the same. Seasonal changes in demand are often observed, such as higher spikes closer to holiday and tourism seasons. With a simple modification to the algorithm, passenger data may be considered and seasonal changes can be factored into the algorithm using Poisson distribution. 
 
-$$ P\left( n \right) = \frac{{e^{ - \lambda } \lambda ^n }}{{n!}} $$
+$$ P(N=n) = \frac{\lambda^(n) exp(- \lambda)}{n!}$$
 
 Poisson distribution is used to express the probability of a given number of events occuring in a fixed interval of time or space. In the context of this algorithm, Poisson distribution can be used to model customer demand for tickets. Using appropriate data, we can extrapolate how many total customers will require tickets, and factor it into the total number of tickets offered by the airline company. 
 
