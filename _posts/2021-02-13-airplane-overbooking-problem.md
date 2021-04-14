@@ -25,7 +25,7 @@ Starting of with modelling a basic structure for passengers that board the fligh
 
 Binomial distributions are represented as,
 
-$$ P(N=n) =  {180 + overbook\choose n}p^n(1-p)^(180+overbook-n)$$
+$$ P(N=n) =  {180 + overbook\choose n}p^n(1-p)^{180+overbook-n}$$
 
 ***180 + overbook*** represents the total number of tickets offered by the airline company, defined as the original 180 seats and a variable *overbook* to account for the number of extra seats offered by the airline. ***N*** represents the number of customers who show up at the ticketing counter. Here, binomial theorem allows us to optimize for the number of overbooked seats. Given the probabilistic aspect of running this experiment once, we convert our experiment into a Monte Carlo setting to allow for more deterministic results.
 
@@ -81,7 +81,7 @@ It may be observed that, despite not reaching the theoretical limit, this algori
 
 It may be interesting to note that in more realistic settings, the demand for tickets is not always the same. Seasonal changes in demand are often observed, such as higher spikes closer to holiday and tourism seasons. With a simple modification to the algorithm, passenger data may be considered and seasonal changes can be factored into the algorithm using Poisson distribution. 
 
-$$ P(N=n) = \frac{\lambda^(n) exp(- \lambda)}{n!}$$
+$$ P(N=n) = \frac{\lambda^{n} {\rm e}^{- \lambda}}{n!}$$
 
 Poisson distribution is used to express the probability of a given number of events occuring in a fixed interval of time or space. In the context of this algorithm, Poisson distribution can be used to model customer demand for tickets. Using appropriate data, we can extrapolate how many total customers will require tickets, and factor it into the total number of tickets offered by the airline company. 
 
