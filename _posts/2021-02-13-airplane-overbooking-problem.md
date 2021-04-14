@@ -29,7 +29,7 @@ $$ P(N=n) =  {180 + overbook\choose n}p^n(1-p)^{180+overbook-n}$$
 
 ***180 + overbook*** represents the total number of tickets offered by the airline company, defined as the original 180 seats and a variable *overbook* to account for the number of extra seats offered by the airline. ***N*** represents the number of customers who show up at the ticketing counter. Here, binomial theorem allows us to optimize for the number of overbooked seats. Given the probabilistic aspect of running this experiment once, we convert our experiment into a Monte Carlo setting to allow for more deterministic results.
 
-We state our problem mathematically as follows: given an airline company offering ***180+overbook*** number of tickets, with each ticket costing \$200 and airline's recompensation price to each passenger bumped costing \$800, we aim to optimize ***overbook*** in such a manner as to earn the highest possible revenue. To do this, we must determine a revenue function $r(n)$ that we shall maximize. Considering we make money from each passenger boarding the plane and lose income from each passenger being bumped off and recompensated, we define $r(n)$ as,
+We state our problem mathematically as follows: given an airline company offering ***180+overbook*** number of tickets, with each ticket costing \$ 200 and airline's recompensation price to each passenger bumped costing \$ 800, we aim to optimize ***overbook*** in such a manner as to earn the highest possible revenue. To do this, we must determine a revenue function $r(n)$ that we shall maximize. Considering we make money from each passenger boarding the plane and lose income from each passenger being bumped off and recompensated, we define $r(n)$ as,
 
 $r(n) = 200n$ if $n < 180$, and,
 
