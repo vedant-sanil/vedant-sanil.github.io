@@ -75,7 +75,7 @@ for n in range(180, 200):
 
 A plot may be constructed to determine the optimal number of overbooked seats. 
 
-<!--img src="{{ site.img_path }}/airplane_overbook/no_poisson.jpg" width="50%" /-->
+<img src="{{ site.img_path }}/airplane_overbook/no_poisson.jpg" width="50%" />
 
 It may be observed that, despite not reaching the theoretical limit, this algorithm provides an excellent paradigm for the number of overbooked seats we can offer to come close to the theoretical limit. It is also observed that after 7 seats, there is a sharper decline in the maximum revenue earned.
 
@@ -123,7 +123,7 @@ for n in range(180, 200):
 
 And a corresponding plot for observing revenue vs. overbooked seats is, 
 
-<!--img src="{{ site.img_path }}/airplane_overbook/poisson.jpg" width="50%" /-->
+<img src="{{ site.img_path }}/airplane_overbook/poisson.jpg" width="50%" />
 
 It may be observed that by factoring in demand, a lower optimal revenue is observed. This typically matches common sense, since high demands are rare as opposed to day to day operations.
 
