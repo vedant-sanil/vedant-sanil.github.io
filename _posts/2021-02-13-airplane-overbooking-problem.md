@@ -75,5 +75,56 @@ for n in range(180, 200):
 
 A plot may be constructed to determine the optimal number of overbooked seats. 
 
-<!-- ![edit]({{ site.img_path }}/airplane_overbook/no_poisson.jpg) -->
-<img src="{{ site.img_path }}/airplane_overbook/no_poisson.jpg" width="75%">
+<img src="{{ site.img_path }}/airplane_overbook/no_poisson.jpg" width="50%">
+
+It may be observed that, despite not reaching the theoretical limit, this algorithm provides an excellent paradigm for the number of overbooked seats we can offer to come close to the theoretical limit. It is also observed that after 7 seats, there is a sharper decline in the maximum revenue earned.
+
+It may be interesting to note that in more realistic settings, the demand for tickets is not always the same. Seasonal changes in demand are often observed, such as higher spikes closer to holiday and tourism seasons. With a simple modification to the algorithm, passenger data may be considered and seasonal changes can be factored into the algorithm using Poisson distribution. 
+
+$$ P\left( n \right) = \frac{{e^{ - \lambda } \lambda ^n }}{{n!}} $$
+
+Poisson distribution is used to express the probability of a given number of events occuring in a fixed interval of time or space. In the context of this algorithm, Poisson distribution can be used to model customer demand for tickets. Using appropriate data, we can extrapolate how many total customers will require tickets, and factor it into the total number of tickets offered by the airline company. 
+
+We do this by sampling the total customer from a poisson distribution, and use that number to generate a binomial distribution around how many customers will show up. It follows that should the demand be greater than the number of seats being offered by the airline, we limit the demand to the number of seats offered. The $\lambda$ parameter required for computing the poisson distribution is typically obtained from the data. For this example however, I'll set $\lambda = 187.5$ going by the fact that in the previous experimentation, optimal overbooked seats is $7$. I have included a code to include this experiment below,
+
+```python
+import numpy as np
+
+# Check revenue for 180 to 180 + 20 tickets, 
+# where 20 is the maximum overbooked tickets the airline offers
+
+exp_revenue = []
+for n in range(180, 200):
+    rev_ls = []
+
+    # Running 100000 iterations for deterministic results 
+    for i in range(100000):
+
+        # Calculate the total demand by sampling it from a poisson distribution
+        # If the demand is greater than the total number of tickets offered,
+        # set demand equal to the number of tickets offered.
+        # Else, use new demand to model the binomial sampling.
+        demand = np.random.poisson(187.5)
+        if demand >= n:
+            demand = n
+        show = np.random.binomial(demand, 0.95)
+
+        # Computing total revenue
+        if show <=180:
+            rev = 200 * show 
+        else:
+            rev = 200 * 180 - 800 * (show-180)
+
+        rev_ls.append(rev)
+  
+    rev_mean = np.mean(np.array(rev_ls))
+    exp_revenue.append(rev_mean)
+```
+
+And a corresponding plot for observing revenue vs. overbooked seats is, 
+
+<img src="{{ site.img_path }}/airplane_overbook/poisson.jpg" width="50%">
+
+It may be observed that by factoring in demand, a lower optimal revenue is observed. This typically matches common sense, since high demands are rare as opposed to day to day operations.
+
+Credits to Cory Simon's [blog](http://corysimon.github.io/articles/by-how-many-flights-should-an-airline-overbook/) for a theoretical foundation of the topic. 
