@@ -7,7 +7,7 @@ title:  "Research Work of Interest"
 date:   2021-04-14
 desc: "A repository of the papers I've read and currently reading."
 keywords: "statistics, machine learning, research, papers"
-categories: [Machine Learning]
+categories: [Science]
 tags: [ML, Research]
 icon: icon-html
 ---
