@@ -28,10 +28,15 @@
   rel="stylesheet" 
   type="text/css" 
   href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-  
+
   <!-- Main Scripts -->
   <script src="{{"/static/assets/app-20180125.min.js"| prepend: site.baseurl }}"></script>
   <script src="{{"/static/assets/blog-20180125.min.js"| prepend: site.baseurl }}"></script>
+  <script 
+    type="text/javascript" 
+    charset="utf8" 
+    src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js">
+  </script>
 
   <!--Math Script-->
   <script type="text/x-mathjax-config">
@@ -43,8 +48,15 @@
         processEscapes : true
       }
     });
+
   </script><script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#table_id').DataTable();
+    });
+  </script>
 
   <!-- Google AdSense -->
   <script data-ad-client="ca-pub-6844376325582436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
