@@ -16,8 +16,8 @@ I aim to use this blog to keep a track of the papers I read, sometimes with a li
 
 <div class="datatable-begin"></div>
 
-Paper Title                        | Link | Read (Yes/No) | Implementation/Interpretation (if exists)
----------------------------------- | ---- | ------------- | -----------------------------------------
+Paper Title                                                 | Link                | Read (Yes/No)              | Implementation/Interpretation (if exists)
+----------------------------------------------------------- | ------------------- | -------------------------- | -----------------------------------------
 Canonical Autocorrelation Analysis | [link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.) | Yes | None
 
 <div class="datatable-end"></div>
