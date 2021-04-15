@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: GitHub, Pytorch, C/C++, Java, Machine Learing, Python, Distributed Systems, Speech Processing, Signal Processing
-percentage: 75, 85, 85, 80, 90, 100, 80, 90, 82
+aspects: Pytorch, C/C++, Java, Machine Learing, Python, Distributed Systems, Speech Processing, Signal Processing
+percentage: 90, 90, 80, 90, 100, 80, 90, 82
