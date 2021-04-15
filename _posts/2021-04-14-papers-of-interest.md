@@ -1,7 +1,6 @@
 ---
 layout: post
-mathjax: true
-datatable: true
+datatables: true
 title:  "Research Work of Interest"
 date:   2021-04-14
 desc: "A repository of the papers I've read and currently reading."
