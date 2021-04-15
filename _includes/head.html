@@ -34,10 +34,13 @@
     MathJax.Hub.Config({
       tex2jax: {
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        inlineMath: [['$','$']]
+        inlineMath: [['$','$'], ["\\(","\\)"]],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes : true
       }
     });
-  </script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  </script><script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <!-- Google AdSense -->
   <script data-ad-client="ca-pub-6844376325582436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
