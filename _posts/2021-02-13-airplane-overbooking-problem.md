@@ -1,12 +1,11 @@
 ---
 layout: post
 mathjax: true
-comments: true
 title:  "Airplane Overbooking Problem"
 date:   2021-02-13
 desc: "A Probabilstic View of the Airplane Overbooking Problem"
 keywords: "statistics,poisson,python,binomial,probability,airplane"
-categories: [Science]
+categories: [Sc]
 tags: [ML,Python]
 icon: icon-html
 ---
