@@ -36,4 +36,156 @@ I aim to use this blog to keep a track of the papers I read, sometimes with a li
             <td markdown="span"> - </td>
         </tr>
     </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
+            <td markdown="span">Yes</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
 </table>
