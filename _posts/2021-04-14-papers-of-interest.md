@@ -6,14 +6,14 @@ title:  "Research Work of Interest"
 date:   2021-04-14
 desc: "A repository of the papers I've read and currently reading."
 keywords: "statistics, machine learning, research, papers"
-categories: [Sc]
+categories: [Science]
 tags: [ML, Research]
 icon: icon-html
 ---
 
 I aim to use this blog to keep a track of the papers I read, sometimes with a link to my implementation/interpretation of the research work done within. I'll try to maintain this blog as frequently as possible, but the blog may not contain a complete repository of research work with which I am up to date.
 
-<table id="1" class="display">
+<table id="table_id" class="display">
     <colgroup>
         <col width="60%" />
         <col width="10%" />
@@ -37,9 +37,3 @@ I aim to use this blog to keep a track of the papers I read, sometimes with a li
         </tr>
     </tbody>
 </table>
-
-<script>
-    $(document).ready( function () {
-    $('1').DataTable();
-    } );
-</script>
