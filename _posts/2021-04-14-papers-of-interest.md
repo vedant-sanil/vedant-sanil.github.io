@@ -2,6 +2,7 @@
 layout: post
 mathjax: true
 comments: true
+datatable: true
 title:  "Research Work of Interest"
 date:   2021-04-14
 desc: "A repository of the papers I've read and currently reading."
@@ -30,7 +31,7 @@ I aim to use this blog to keep a track of the papers I read, sometimes with a li
     </thead>
     <tbody>
         <tr>
-            <td markdown="span">Canonical Correlation Analysis</td>
+            <td markdown="span">Canonical Autocorrelation Analysis</td>
             <td markdown="span">[link](https://arxiv.org/abs/1511.06419#:~:text=Unlike%20CCA%2C%20which%20finds%20correlations,just%20one%20set%20of%20variables.)</td>
             <td markdown="span">Yes</td>
             <td markdown="span"> - </td>
