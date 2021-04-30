@@ -34,4 +34,25 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
             <td markdown="span"> - </td>
         </tr>
     </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Empirical Studies in the NLP Techniques for Source Code Data Preprocessing</td>
+            <td markdown="span">[link](https://dl.acm.org/doi/pdf/10.1145/2627508.2627514)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Realtime Query Completion via Deep Language Models</td>
+            <td markdown="span">[link](https://powei.tw/qcomp.pdf)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Efficient Neural Query Auto Completion</td>
+            <td markdown="span">[link](https://arxiv.org/pdf/2008.02879.pdf)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
 </table>
