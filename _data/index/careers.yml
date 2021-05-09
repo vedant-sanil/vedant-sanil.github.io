@@ -15,10 +15,10 @@
   icon: fa-plus-square
 
 - name:
-    detail: Feather Health Inc.
+    detail: ReadMyECG
     i18n: company_f
   desc:
-    detail: Data Science intern who worked on TIme-Series analysis of relevant biomedical time series data.
+    detail: Data Science intern who worked on time-series analysis of relevant biomedical time series data.
     i18n: company_f_desc
   date:
     detail: May 2020

@@ -55,4 +55,11 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
             <td markdown="span"> - </td>
         </tr>
     </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Listen, Attend and Spell</td>
+            <td markdown="span">[link](https://arxiv.org/abs/1508.01211)</td>
+            <td markdown="span"> [Code](https://github.com/vedant-sanil/speech-processing) </td>
+        </tr>
+    </tbody>
 </table>
