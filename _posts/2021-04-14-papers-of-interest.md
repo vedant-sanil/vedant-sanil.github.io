@@ -36,6 +36,13 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
     </tbody>
     <tbody>
         <tr>
+            <td markdown="span">Subphonetic modeling with Markov states-Senone</td>
+            <td markdown="span">[link](https://ieeexplore.ieee.org/document/225979)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
             <td markdown="span">Empirical Studies in the NLP Techniques for Source Code Data Preprocessing</td>
             <td markdown="span">[link](https://dl.acm.org/doi/pdf/10.1145/2627508.2627514)</td>
             <td markdown="span"> - </td>
@@ -45,6 +52,13 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
         <tr>
             <td markdown="span">Realtime Query Completion via Deep Language Models</td>
             <td markdown="span">[link](https://powei.tw/qcomp.pdf)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Accent Conversion Using Phonetic Posteriorgrams</td>
+            <td markdown="span">[link](https://ieeexplore.ieee.org/document/8462258)</td>
             <td markdown="span"> - </td>
         </tr>
     </tbody>
