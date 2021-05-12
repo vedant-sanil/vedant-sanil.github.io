@@ -76,4 +76,18 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
             <td markdown="span"> [Code](https://github.com/vedant-sanil/speech-processing) </td>
         </tr>
     </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Deep Nerual Networks for Acoustic Modeling in Speech Recognition</td>
+            <td markdown="span">[link](https://ieeexplore.ieee.org/document/6296526)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Improving Language Understanding by Generative Pre-Training</td>
+            <td markdown="span">[link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
 </table>
