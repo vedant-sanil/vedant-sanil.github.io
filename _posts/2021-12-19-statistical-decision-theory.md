@@ -17,6 +17,7 @@ We begin by presenting a general framework for making predictions based on a rea
 The theory requires a loss function $L(Y,f(X))$ for penalizing errors in prediction. For convenience, we will choose the *Squared Error Loss* as loss function, which is defined as, $L(Y, f(X)) = (Y-f(X))^{2}$. We define the *Expected Prediction Error* as the criterion for choosing $f$. 
 
 $$EPE(f) = E(Y-f(X))^{2}$$
+
 $$EPE(f) = \int (y-f(x))^{2}Pr(dx, dy)$$
 
 We can convert the joint distribution above to a density function according to the property $P(X,Y \in \mathbb{R})=\int \int f_{XY}(x,y)\,dx\,dy$, where $f_{XY}$ is the density function. We now define $EPE$ as,
@@ -26,11 +27,15 @@ $$EPE(f)=\int \int (y-f(x))^{2}\,f_{XY}(x,y)\,dx\,dy$$
 Using Bayes rule, $f_{XY}(x,y) = f_{Y|X}(y|x)f_{X}(x)$. We plug this into the formulation above as,
 
 $$EPE(f) = \int \int (y-f(x))^{2}\,f_{Y|X}(y|x)\,f_{X}(x)\,dy\,dx$$
+
 $$EPE(f) = \int \int f_{X}(x)\,[(y-f(x))^{2}\,f_{Y|X}\,dy]\,dx$$
+
 $$EPE(f) = \int f_{X}(x) \bigg[\int (y-f(x))^{2}\,f_{Y|X}\,dy\bigg]\,dx$$
 
 We can use the definitions of Expectations $E_{X}$ and $E_{Y|X}$ to simplify the equation above as,
+
 $$EPE(f) = E_{X} \int (y-f(x))^{2}\,f_{Y|X}\,dy$$
+
 $$EPE(f) = E_{X} E_{Y|X}([Y-f(X)]^{2}|X)$$
 
 Note that for each point $x \in X$, when we condition on $X=x$ we observe that we only need to minimize $E_{Y|X}$. This is done as,
@@ -52,6 +57,7 @@ $$EPE(f)=argmin_{c}(E_{Y|X}(Y^{2}|X=x) -2cE_{Y|X}(Y|X=x)+c^{2})$$
 We differentiate w.r.t $c$ and set the right hand side to 0,
 
 $$0 = -2E_{Y|X}(Y|X=x) +2c$$
+
 $$c = E_{Y|X}(Y|X=x)$$
 
 We obtain the solution to the Decision Theory as,
