@@ -12,7 +12,7 @@ icon: icon-html
 
 I aim to use this blog to keep a track of the papers I read, sometimes with a link to my implementation/interpretation of the research work done within. I'll try to maintain this blog as frequently as possible, but the blog may not contain a complete repository of research work with which I am up to date.
 
-Current read : [Variational Inference: A Review for Statisticians](https://arxiv.org/pdf/1601.00670.pdf)
+Current read : [Time Series Analysis and Its Applications: With R Examples](https://www.amazon.com/gp/product/3319524518)
 
 <table id="table_id" class="display">
     <colgroup>
@@ -78,7 +78,7 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
     </tbody>
     <tbody>
         <tr>
-            <td markdown="span">Deep Nerual Networks for Acoustic Modeling in Speech Recognition</td>
+            <td markdown="span">Deep Neural Networks for Acoustic Modeling in Speech Recognition</td>
             <td markdown="span">[link](https://ieeexplore.ieee.org/document/6296526)</td>
             <td markdown="span"> - </td>
         </tr>
@@ -87,6 +87,27 @@ Current read : [Variational Inference: A Review for Statisticians](https://arxiv
         <tr>
             <td markdown="span">Improving Language Understanding by Generative Pre-Training</td>
             <td markdown="span">[link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Parallel Training of DNNs with Natural Gradient and Parameter Averaging</td>
+            <td markdown="span">[link](https://arxiv.org/pdf/1410.7455.pdf)</td>
+            <td markdown="span"> [Implementation](http://kaldi-asr.org/models/m13) </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Multistream CNN for Robust Acoustic Modeling</td>
+            <td markdown="span">[link](http://danielpovey.com/files/2020_interspeech_multistream.pdf)</td>
+            <td markdown="span"> - </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td markdown="span">Approximate Asymptotic Distribution Functions for Unit-Root and Cointegration Tests</td>
+            <td markdown="span">[link](https://www.jstor.org/stable/1391481)</td>
             <td markdown="span"> - </td>
         </tr>
     </tbody>
