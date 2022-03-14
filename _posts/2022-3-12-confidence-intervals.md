@@ -19,6 +19,7 @@ I begin this blog by giving a formal definition to Confidence Intervals, and the
 A definition of Confidence Intervals can be found in Larry Wasserman's [All of Statistics](https://link.springer.com/book/10.1007/978-0-387-21736-9), Ch. 6: Models, Statistical Inference and Learning,
 
 A $1-\alpha$ **confidence interval** for a parameter $\theta$ is an interval $C_{n} = (a,b)$ where $a = a(X_{1}, ...., X_{n})$ and $b = b(X_{1}, ...., X_{n})$ are functions of the data such that, 
+
 $$\mathbb{P}_{\theta}(\theta \in C_{n}) \geq 1 - \alpha, \; \forall \; \theta \in \Theta$$
 
 In words, $(a,b)$ traps $\theta$ with a probability $1-\alpha$. We call $1-\alpha$ the **coverage** of the confidence interval.
@@ -35,22 +36,43 @@ While the formal definition provides us with a basic understanding of Confidence
 
 We now explore a detailed derivation of the CI of $n$ random variables, each R.V. is modelled by the Bernoulli distribution. In the pursuit of this derivation, we will try cover all 4 points raised above. I will try to be as elaborate as possible with the derivation, and add explanations where necessary. 
 
+<br/><br/>
+
 ## Confidence Intervals for Bernoulli Distributed Random Variables
 Let $X_{1}, ...., X_{n} ~ Bernoulli(p)$ be $n$ Bernoulli distributed independent random variables parametrized by $p$. The parameter $p$ is also the expected value of this distribution. We can therefore ask the question, what is the maximum and minimum value that the average of the **observed** data deviates from the expected value $p$. In other words, can we find an upper and lower bound for the value of the observed average's deviation from the expected value? Let's represent this statement mathematically. For any $\epsilon > 0$, we quantify the magnitude of the observed average $ \bar{X} = n^{-1} \sum_{i=1}^{n}X_{i}$ from the expected value $p$ as,
+
 $$\mathbb{P}(\vert \bar{X}-p \vert > \epsilon)$$
 
 We attempt to rewrite this inequality in a different manner as shown below,
+
 $$\mathbb{P}(\vert \bar{X}-p \vert >  \epsilon) = \mathbb{P}(\vert \frac{1}{n} \sum_{i=1}^{n}X_{i} - p \vert > \epsilon)$$
+
 $$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}( \vert \sum_{i=1}^{n}X_{i} - np \vert > n \epsilon)$$
 
 Coincidentally, we observe that $np$ can be written as $\mathbb{E}[\sum_{i=1}^{n}X_{i}]$. This is because for $n$ independent Bernoulli trials, 
+
 $$\mathbb{E}[\sum_{i=1}^{n}X_{i}] = \sum_{i=1}^{n}\mathbb{E}[X_{i}] = \sum_{i=1}^{n}p = np$$
 
 Therefore, we can now rewrite the inequality as,
-$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}( \vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \vert > n \epsilon) \longrightarrow (1)$$
+
+$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) \longrightarrow (1)$$
 
 We can now use Hoeffding's inequality to create an upper bound for this inequality. I'll briefly introduce Hoeffding's Inequality here, but you can refer to the [Wikipedia page](https://en.wikipedia.org/wiki/Hoeffding%27s_inequality) for a more detailed definition, along with a proof. Do it give it a read, it's quite interesting! 
 
 ### Hoeffding's Inequality
 For a sum of independent random variables $X_{1}, ...., X_{n}$, where $a_{i} \le X_{i} \le b_{i}$ Hoeffding's inequality states that,
-$$\mathbb{P}( \vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \vert > \epsilon) < 2*exp \left( \frac{-2 t^{2}}{\sum_{i=1}^{n}(b_{i} - a_{i})^{2}} \right)$$
+
+$$\mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > \epsilon\right) < 2*exp \left( \frac{-2 t^{2}}{\sum_{i=1}^{n}(b_{i} - a_{i})^{2}} \right)$$
+
+where $t > 0$ is a constant.
+
+We now apply Hoeffding's Inequality to our problem. You can already see our reasoning for using this inequality to set upper bounds for equation $(1)$ based on the definition above. Applying Hoeffding's inequality to the RHS of equation $(1)$,
+
+$$\mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) < 2*exp \left( \frac{-2 n^{2}\epsilon^{2}}{\sum_{i=1}^{n}(b_{i} - a_{i})^{2}} \right)$$
+
+We also observe that for any Bernoulli random variable, the r.v. takes only two values, $1$ and $0$, since a Bernoulli distribution is defined as, $\mathbb{P}(X_{i}=1)=p$ and $\mathbb{P}(X_{i}=0)=(1-p)$. In the context of Hoeffding's Inequality, the bounds for each r.v. is, 
+
+$$a_{i} \le X_{i} \le b_{i} \implies a_{i}=0, b_{i}=1, \: \forall \: i \in [0, N)$$
+
+We can now 
+
