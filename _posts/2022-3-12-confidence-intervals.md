@@ -68,11 +68,69 @@ where $t > 0$ is a constant.
 
 We now apply Hoeffding's Inequality to our problem. You can already see our reasoning for using this inequality to set upper bounds for equation $(1)$ based on the definition above. Applying Hoeffding's inequality to the RHS of equation $(1)$,
 
-$$\mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) < 2*exp \left( \frac{-2 n^{2}\epsilon^{2}}{\sum_{i=1}^{n}(b_{i} - a_{i})^{2}} \right)$$
+$$\mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) < 2*exp \left( \frac{-2 n^{2}\epsilon^{2}}{\sum_{i=1}^{n}(b_{i} - a_{i})^{2}} \right) \longrightarrow (2)$$
 
 We also observe that for any Bernoulli random variable, the r.v. takes only two values, $1$ and $0$, since a Bernoulli distribution is defined as, $\mathbb{P}(X_{i}=1)=p$ and $\mathbb{P}(X_{i}=0)=(1-p)$. In the context of Hoeffding's Inequality, the bounds for each r.v. is, 
 
 $$a_{i} \le X_{i} \le b_{i} \implies a_{i}=0, b_{i}=1, \: \forall \: i \in [0, N)$$
 
-We can now 
+We can now substitue the values for $a_{i}$ and $b_{i}$ in equation $(2)$, 
 
+$$\mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) < 2*exp \left( \frac{-2 n^{2}\epsilon^{2}}{n} \right)$$
+
+$$\mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) < 2*exp \left( -2 n \epsilon^{2} \right)$$
+
+To recap our derivations until this point, we now understand that for a certain Bernoulli distribution $X_{1}, ...., X_{n}$, the probability that the observed average of this distribution of random variables deviates from their expected value $p$ by an amount $\epsilon$ is bounded by,
+
+$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}\left( \bigg\vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \bigg\vert > n \epsilon\right) < 2*exp \left( -2 n \epsilon^{2} \right)$$
+
+$$ \mathbb{P}( \vert \bar{X}-p \vert > \epsilon) < 2*exp \left( -2 n \epsilon^{2} \right) \longrightarrow (3)$$
+
+Consider the expression $\vert \bar{X_{n}} - p \vert > \epsilon$, from which we can derive,
+
+$$ \implies \bar{X_{n}} - p > \epsilon, \bar{X_{n}} - p < -\epsilon$$
+$$ \implies \bar{X_{n}} - \epsilon > p, \bar{X_{n}} + \epsilon < p$$
+
+Pay attention to this derivation. With the second implication, we can define a range for $p$ such that it lies outside the interval $(\bar{X_{n}} - \epsilon, \bar{X_{n}} + \epsilon)$. We now formally define this interval as,
+
+$$C_{n} = (\bar{X_{n}} - \epsilon, \bar{X_{n}} + \epsilon) \longrightarrow (4)$$
+
+With the definition of $C_{n}$ defined in equation ${4}$, we can express the Left Hand Side of equation ${3}$ using our newly derived range for $p$ as,
+
+$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}( \bar{X_{n}} - \epsilon > p, \bar{X_{n}} + \epsilon < p) = \mathbb{P}(p \notin C_{n}) $$
+
+and, 
+
+$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) \leq 2*exp \left( -2 n \epsilon^{2} \right)$$
+
+$$ \implies \mathbb{P}(p \notin C_{n}) \leq 2*exp \left( -2 n \epsilon^{2} \right) $$
+
+Let $\alpha = 2*exp \left( -2 n \epsilon^{2} \right)$, we can now write the equation above as, 
+
+$$ \mathbb{P}(p \notin C_{n}) \leq \alpha$$
+
+$$ \implies \mathbb{P}(p \notin C_{n}) \geq 1-\alpha$$
+
+We are finally ready to bridge the definition of a confidence interval with the parameter $p$. From the equation above, we can state that the random interval $C_{n}$ becomes a $(1-\alpha)$ confidence interval $C_{n}$ when it traps the value of parameter $p$ with the interval $C_{}n$ with a probability greater than $(1-\alpha)$. 
+
+### Bounding Values of Confidence Intervals
+
+For our example, it is very easy to compute the bounding value $\epsilon$ such that it traps the parameter $p$ within a $C_{n}$ with a probability $(1-\alpha)$. This is done using our defination of $\alpha$, 
+
+$$ \alpha = 2*exp \left( -2 n \epsilon^{2} \right)$$
+
+$$ \implies exp \left( -2 n \epsilon^{2} \right) = \frac{\alpha}{2}$$
+
+$$ \implies exp \left( 2 n \epsilon^{2} \right) = \frac{2}{\alpha}$$
+
+$$ \implies 2 n \epsilon^{2} = log \left( \frac{2}{\alpha} \right)$$
+
+$$ \implies \epsilon = \sqrt{\frac{1}{2n} log \left( \frac{2}{\alpha} \right)}$$
+
+Therefore, the confidence interval $C_{n}$ can be expressed as,
+
+$$ C_{n} = (\bar{X_{n}} - \epsilon, \bar{X_{n}} + \epsilon) = \left(\bar{X_{n}} - \sqrt{\frac{1}{2n} log \left( \frac{2}{\alpha} \right)}, \bar{X_n} + \sqrt{\frac{1}{2n} log \left( \frac{2}{\alpha} \right)} \right)$$
+
+The value of $\alpha$, as mentioned previously, is the user's choice. A common choice is setting $\alpha$ to $0.05$, allowing for a confidence of $95$ percent that our selected confidence interval traps the parameter $p$. 
+
+We now have a clearer understanding of confidence intervals. A confidence interval is not a probability distribution over the parameter $\theta$, which may appear intuitive when we first look at the definition of CIs, nor is it a fixed range of values that $\theta$ can take. Rather, it is more intuitive to define CIs as an interval that bounds the value of $\theta$ with a certain probability $(1-\alpha)$, hence giving it the name $(1-\alpha)$ Confidence Interval. 
