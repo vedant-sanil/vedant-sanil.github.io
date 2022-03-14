@@ -24,7 +24,7 @@ We can convert the joint distribution above to a density function according to t
 
 $$EPE(f)=\int \int (y-f(x))^{2}\,f_{XY}(x,y)\,dx\,dy$$
 
-Using Bayes rule, $f_{XY}(x,y) = f_{Y|X}(y|x)f_{X}(x)$. We plug this into the formulation above as,
+Using Bayes rule, $f_{XY}(x,y) = f_{Y \vert X}(y \vert x)f_{X}(x)$ . We plug this into the formulation above as,
 
 $$EPE(f) = \int \int (y-f(x))^{2}\,f_{Y|X}(y|x)\,f_{X}(x)\,dy\,dx$$
 
@@ -32,13 +32,13 @@ $$EPE(f) = \int \int f_{X}(x)\,[(y-f(x))^{2}\,f_{Y|X}\,dy]\,dx$$
 
 $$EPE(f) = \int f_{X}(x) \bigg[\int (y-f(x))^{2}\,f_{Y|X}\,dy\bigg]\,dx$$
 
-We can use the definitions of Expectations $E_{X}$ and $E_{Y|X}$ to simplify the equation above as,
+We can use the definitions of Expectations $E_{X}$ and $E_{Y \vert X}$ to simplify the equation above as,
 
 $$EPE(f) = E_{X} \int (y-f(x))^{2}\,f_{Y|X}\,dy$$
 
 $$EPE(f) = E_{X} E_{Y|X}([Y-f(X)]^{2}|X)$$
 
-Note that for each point $x \in X$, when we condition on $X=x$ we observe that we only need to minimize $E_{Y|X}$. This is done as,
+Note that for each point $x \in X$, when we condition on $X=x$ we observe that we only need to minimize $E_{Y \vert X}$. This is done as,
 
 $$ EPE(f) = E_{Y|X}([Y-f(X)]^{2}|X=x)$$
 

@@ -36,7 +36,7 @@ $r(n) = 200(180) - 800(n-180)$ if $n > 180$
 
 where $n$ is the number of passengers who show up given the airline company offering ***180 + overbook*** tickets. The revenue we expect to make given our overbooking policy is,
 
-$$ E(r|overbook) = \sum_{n=0}^{180+overbook} P(N=n|overbook)r(n) $$
+$$ E(r \vert overbook) = \sum_{n=0}^{180+overbook} P(N=n \vert overbook)r(n) $$
 
 $P(N=n)$ is conditioned based on binomial distribution as above, determined by fixing a value for $overbook$. We test this algorithm in a Monte-Carlo setting by checking the expected revenue for different values of $overbook$ and plot a graph to determine the optimal $overbook$ that provides maximal revenue. 
 
