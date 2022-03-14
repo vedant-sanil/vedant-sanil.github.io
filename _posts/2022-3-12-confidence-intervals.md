@@ -134,3 +134,38 @@ $$ C_{n} = (\bar{X_{n}} - \epsilon, \bar{X_{n}} + \epsilon) = \left(\bar{X_{n}} 
 The value of $\alpha$, as mentioned previously, is the user's choice. A common choice is setting $\alpha$ to $0.05$, allowing for a confidence of $95$ percent that our selected confidence interval traps the parameter $p$. 
 
 We now have a clearer understanding of confidence intervals. A confidence interval is not a probability distribution over the parameter $\theta$, which may appear intuitive when we first look at the definition of CIs, nor is it a fixed range of values that $\theta$ can take. Rather, it is more intuitive to define CIs as an interval that bounds the value of $\theta$ with a certain probability $(1-\alpha)$, hence giving it the name $(1-\alpha)$ Confidence Interval. 
+
+Here is a code snippet that can be used to simulate Confidence Intervals in a biased coin toss experiment, with 100 tosses each with a 70 percent probability of heads. 
+
+```python
+import numpy as np
+
+NUM_SIMULATIONS = 100
+NUM_TOSSES = 100
+HEAD_PROB = 0.7
+ALPHA = 0.05
+
+def simulate_unfair_cointoss(num_tosses, prob_heads):
+    # Returns average number of heads among "num_tosses" coin tosses
+    return np.random.binomial(num_tosses, prob_heads)/num_tosses
+
+
+bucket_hit_count = 0
+for i in range(NUM_SIMULATIONS):
+    np.random.seed(i)
+    
+    expected_probability = HEAD_PROB # Expected probability
+
+    # Simulate NUM_TOSSES number of biased coin tosses 
+    observed_heads_average = simulate_unfair_cointoss(NUM_TOSSES, HEAD_PROB)
+
+    # Compute confidence interval min and max
+    epsilon = np.sqrt((1/(2*NUM_TOSSES))*np.log(2/ALPHA))
+    low_ci, high_ci = observed_heads_average - epsilon, observed_heads_average + epsilon
+
+    # Increment hit count if the expected probability falls within CI bucket
+    if observed_heads_average >= low_ci and observed_heads_average <= high_ci:
+        bucket_hit_count += 1
+
+print(f"Percentage of Expected Probability that falls within (1-alpha) CI: {(bucket_hit_count/NUM_SIMULATIONS)*100} percent")
+```
