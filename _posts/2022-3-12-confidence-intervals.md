@@ -13,6 +13,8 @@ icon: icon-html
 
 I begin this blog by giving a formal definition to Confidence Intervals, and then a detailed mathematical derivation to provide a more detailed insight into the significance of Confidence Intervals (CIs). 
 
+<br/><br/>
+
 ## Formal Definition of Confidence Intervals
 A definition of Confidence Intervals can be found in Larry Wasserman's [All of Statistics](https://link.springer.com/book/10.1007/978-0-387-21736-9), Ch. 6: Models, Statistical Inference and Learning,
 
@@ -45,9 +47,10 @@ Coincidentally, we observe that $np$ can be written as $\mathbb{E}[\sum_{i=1}^{n
 $$\mathbb{E}[\sum_{i=1}^{n}X_{i}] = \sum_{i=1}^{n}\mathbb{E}[X_{i}] = \sum_{i=1}^{n}p = np$$
 
 Therefore, we can now rewrite the inequality as,
-$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}( \vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \vert > n \epsilon) \longrightarrow \textcircled{1}$$
+$$\mathbb{P}( \vert \bar{X}-p \vert > \epsilon) = \mathbb{P}( \vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \vert > n \epsilon) \longrightarrow (1)$$
 
 We can now use Hoeffding's inequality to create an upper bound for this inequality. I'll briefly introduce Hoeffding's Inequality here, but you can refer to the [Wikipedia page](https://en.wikipedia.org/wiki/Hoeffding%27s_inequality) for a more detailed definition, along with a proof. Do it give it a read, it's quite interesting! 
 
+### Hoeffding's Inequality
 For a sum of independent random variables $X_{1}, ...., X_{n}$, where $a_{i} \le X_{i} \le b_{i}$ Hoeffding's inequality states that,
 $$\mathbb{P}( \vert \sum_{i=1}^{n}X_{i} - \mathbb{E}[\sum_{i=1}^{n}X_{i}] \vert > \epsilon) < 2*exp \left( \frac{-2 t^{2}}{\sum_{i=1}^{n}(b_{i} - a_{i})^{2}} \right)$$
