@@ -28,8 +28,7 @@ author:  # change following line to your infomation.
   #skill_icon2:
   #  - name: fa-linux
   #  - name: icon-apache
-  desc: I am a Research Programmer/Analyst at Auton Lab, Carnegie Mellon University working under Prof. Artur Dubrawski. 
-    My work specifically focuses on the applications of machine learning technologies in time series data, speech, audio and language. This translated to
+  desc: I am a ML engineer with expertise in backend engineering. My work specifically focuses on the applications of machine learning technologies in time series data, speech, audio and language. This translated to
     my research work with anomaly detection in time series data, ML based cardiovascular disease diagnosis and designing ML models to solve
     a variety of problems pertaining to the speech modality. I also take interest in building scalable software systems and their 
     deployment in distributed systems.  # Describe yourself.
